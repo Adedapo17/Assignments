@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Login Page </title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <!-- Body of Form starts -->
+  <div class="container">
+    <h2>Login Page </h2>
+    <form action="succes.html" method="post" autocomplete="on">
+      <!---Email ID---->
+      <div class="box">
+        <label for="email" class="fl fontLabel"> Email ID: </label>
+        <div class="fl iconBox"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+        <div class="fr">
+          <input type="email" required name="email" placeholder="myexample@email.com" class="textBox">
+        </div>
+        <div class="clr"></div>
+      </div>
+      <!--Email ID----->
+
+
+      <!---Password------>
+      <div class="box">
+        <label for="password" class="fl fontLabel"> Password </label>
+        <div class="fl iconBox"><i class="fa fa-key" aria-hidden="true"></i></div>
+        <div class="fr">
+          <input type="Password" required name="password" placeholder="Password" class="textBox">
+        </div>
+        <div class="clr"></div>
+      </div>
+      <!---Password---->
+
+      <!--Terms and Conditions------>
+      <div class="box terms">
+        <input type="checkbox" name="Terms" required> &nbsp; Remember me
+      </div>
+      <!--Terms and Conditions------>
+
+      <!---Submit Button------>
+      <div class="box" style="background: #212529">
+         <div><a href="" class="link">Forgot your password?</a></div>
+        <input type="Submit" name="Submit" class="submit" value="LOGIN">
+      </div>
+      <!---Submit Button----->
+    </form>
+  </div>
+  <!--Body of Form ends--->
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+</body>
+
+</html>
