@@ -1,0 +1,154 @@
+/*===== GOOGLE FONTS =====*/
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap');
+/*===== VARIABLES CSS =====*/
+
+/*===== Colors =====*/
+/* Primary */
+:root {
+--bright-orange: hsl(31, 77%, 52%);
+--dark-cyan: hsl(184, 100%, 22%);
+--very-dark-cyan: hsl(179, 100%, 13%);
+}
+/* Neutral */
+:root {
+--transparent-white: hsla(0, 0%, 100%, 0.75);
+--very-light-gray: hsl(0, 0%, 95%);
+}
+
+
+/*===== Typography =====*/
+:root{
+  --h2-font: 'Big Shoulders Display', sans-serif;
+  --body-font: 'Lexend Deca', sans-serif;
+  --body-font-size: 15px;
+  --h2-font-weight: 700;
+  --normal-font-weight: 400;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+body{
+  background: var(--very-light-gray);
+}
+header {
+  background: #fff;
+  padding: 10px;
+}
+header button {
+  background: none;
+  border: none;
+  border-radius: 0px;
+  margin-right: 30px;
+}
+a {
+  text-decoration: none;
+}
+
+/* Flex view */
+.card {
+   width: 70%;
+   display: flex;
+   margin-top: 5%;
+   margin-left: auto;
+   margin-bottom: 0;
+   margin-right: auto;
+}
+/* Flex view */
+
+/* Grid view */
+.grid-card {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 70%;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-bottom: 0;
+  margin-right: auto;
+}
+/* Grid view */
+
+.card_a {
+  width: 100%;
+  background: var(--bright-orange);
+  padding: 40px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.card_b {
+  width: 100%;
+  background: var(--dark-cyan);
+  padding: 40px;
+}
+
+.card_c {
+  width: 100%;
+  background: var(--very-dark-cyan);
+  padding: 40px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+img {
+  height: 30px;
+  width: 50px;
+}
+.title {
+  color: #fff;
+  font-family: var(--h2-font);
+  font-weight: var(--h2-font-weight);
+   margin-top: 30px;
+   margin-bottom: 40px;
+}
+.description {
+  color: var(--transparent-white);
+  font-family: var(--body-font);
+  font-weight: var(--normal-font-weight);
+  font-size: var(--body-font-size); 
+  margin-bottom: 70px;
+}
+
+button {
+  display: inline-block;
+  color: var(--very-light-gray);
+  background: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-family: var(--body-font);
+  font-weight: var(--normal-font-weight);
+  font-size: var(--body-font-size);
+  border: 1px solid var(--very-light-gray);
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 756px){
+ .card {
+   display: flex;
+   flex-direction: column;
+   margin-top: 5%;
+   margin-left: auto;
+   margin-bottom: 0;
+   margin-right: auto;
+}
+ .card_a, .card_c {
+   border-radius: 0px;
+ }
+
+  /* Grid view */
+ .grid-card {
+  display: grid;
+  grid-template-columns: none;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-bottom: 0;
+  margin-right: auto;
+}
+}
